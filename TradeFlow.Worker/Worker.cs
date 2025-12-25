@@ -11,7 +11,7 @@ namespace TradeFlow.Worker
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            while (!stoppingToken.IsCancellationRequested) 
             {
                 if (_logger.IsEnabled(LogLevel.Information))
                 {

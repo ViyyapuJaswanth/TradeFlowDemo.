@@ -28,7 +28,7 @@ namespace TradeFlow.Worker
                 new Bin("Symbol", trade.Symbol),
                 new Bin("Price", trade.Price),
                 new Bin("Quantity", trade.Quantity),
-                new Bin("TimestampUtc", trade.TimestampUtc.ToString("o"))
+                new Bin("TimestampUtc", trade.TimestampUtc.ToString("o")) 
             };
             _client.Put(null, key, bins);
         }
